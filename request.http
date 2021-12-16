@@ -1,0 +1,23 @@
+@api = http://localhost:3000
+
+GET {{api}}/videos
+
+###
+POST {{api}}/video
+Content-Type: application/json
+
+{
+  "url": "https://www.youtube.com/watch?v=_RZ-T6TxP7w",
+  "title": "Cocinando con Andrés"
+}
+
+###
+DELETE {{api}}/video/61bb8cca6b03957272288288
+
+###
+PUT {{api}}/video/61bb8cca6b03957272288288
+Content-Type: application/json
+
+{
+  "title": "Cocinando #5845684"
+}
